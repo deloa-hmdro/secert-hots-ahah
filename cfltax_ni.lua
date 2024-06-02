@@ -1,6 +1,6 @@
-_zr = true
-while _zr do
-wait()
+
+while true do
+task.wait()
 function identifyexecutor()
 return "Synapse X"
 end
