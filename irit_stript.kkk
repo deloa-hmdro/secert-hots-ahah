@@ -363,7 +363,7 @@ scripthub.TextSize = 14.000
 scripthub.MouseButton1Click:Connect(function()
 
 end)
-game:GetService("StarterGui"):SetCore("SendNotification", { 	Title = "Synapse X";	Text = identifyexecutor();	Icon = "rbxassetid://14369638300"})
+game:GetService("StarterGui"):SetCore("SendNotification", { 	Title = "Synapse X";	Text = "制作者:龙叔";	Icon = "rbxassetid://14369638300"})
 Attach.Name = "Attach"
 Attach.Parent = MainFrame
 Attach.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
@@ -1006,5 +1006,26 @@ local function VJHASD_fake_script() -- synminbutt.Dragging
     end)
 end
 coroutine.wrap(VJHASD_fake_script)()
-
+while true do
+    wait(0.01)
+    if scripthub_2.Visible == true then
+        if scriptselected == "none" then
+            descri.Text = ""
+        end
+        if scriptselected == "dex" then
+            descri.Text = "A version of the popular Dex explorer with patches specifically for Synapse X."
+        end
+        if scriptselected == "esp" then
+            descri.Text = "ESP Made by ic3w0lf using the Drawing API."
+        end
+        if scriptselected == "spy" then
+            descri.Text = "Allows you to view RemoteEvents and RemoteFunctions called."
+        end
+        if scriptselected == "dumper" then
+            descri.Text = "Dumps the place as a .rbxl file in your workspace folder."
+        end
+        if scriptselected == "backdoor" then
+        	descri.Text = "backdoor.exe for scan place to FE access (Only place ban possible)."
+        end
+    end  
 end
